@@ -7,6 +7,7 @@
 
 body {
   font-family: 'Muli', sans-serif;
+  background-color: azure;
   display: flex;
   align-items: center;
   justify-content: center;
