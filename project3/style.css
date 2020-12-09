@@ -84,7 +84,7 @@ nav {
 
 nav ul {
   list-style-type: none;
-  padding-left: 30px;
+  padding-left: 90px; /* 30 */
 }
 
 nav ul li {
