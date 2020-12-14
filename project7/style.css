@@ -5,7 +5,7 @@
   --left-bg-color: rgba(87, 84, 236, 0.7); /* rgba used to provide transparency */
   --right-bg-color: rgba(43, 43, 43, 0.8);
   --left-btn-hover-color: rgba(87, 84, 236, 1);
-  --right-btn-hover-color: rgba(28, 122, 28, 1);
+  --right-btn-hover-color: rgba(43, 43, 43, 1);
   --hover-width: 75%;
   --other-width: 25%;
   --speed: 750ms;
@@ -23,11 +23,11 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #fff;
   position: absolute;
   left: 50%;
-  top: 20%;
+  top: 5%;
   transform: translateX(-50%);
   white-space: nowrap;
 }
@@ -38,8 +38,8 @@ h1 {
   align-items: center;
   justify-content: center;
   left: 50%;
-  top: 40%;
-  transform: translateX(-50%); /* not sure what this accompishes*/
+  top: 80%;
+  transform: translateX(-50%); /* not sure what this accomplishes*/
   text-decoration: none;
   color: #fff;
   border: #fff solid 0.2rem;
@@ -75,7 +75,7 @@ h1 {
 
 .split.left {
   left: 0;
-  background: url('./images/ps.jpg');
+  background: url('./images/dogs.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -98,7 +98,7 @@ h1 {
 
 .split.right {
   right: 0;
-  background: url('./images/xbox.jpg');
+  background: url('./images/cats.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -123,10 +123,10 @@ h1 {
   width: var(--other-width);
 }
 
-@media(max-width: 850px) {
+@media(max-width: 1250px) {
   h1 {
-    font-size: 2rem;
-    top:  30%;
+    font-size: 1.75rem;
+    /* top:  30%; */
   }
 
   .btn {
