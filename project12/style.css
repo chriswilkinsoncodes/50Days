@@ -10,16 +10,7 @@ body {
   background-position: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
-  /* background-size: contain; */
-  /* background-color: #f7fbfe; */
   font-family: 'Muli', sans-serif;
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0; */
 }
 
 h1 {
