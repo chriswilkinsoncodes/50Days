@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./images/pastel_bg.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+#box1 {
+  background-color: #febcc8;
+}
+
+#box2 {
+  background-color: #ffffd8;
+}
+
+#box3 {
+  background-color: #eaebff;
+}
+
+#box4 {
+  background-color: #e0fefe;
+}
+
+#box5 {
+  background-color: #d3eeff;
+}
+
+.empty {
+  height: 125px;
+  width: 125px;
+  margin: 10px;
+  border: solid 3px #ccc;
+}
+
+.fill {
+  background-image: url(./images/vector_pug_drawing.png);
+  background-size: contain;
+  height: 120px;
+  width: 120px;
+  cursor: pointer;
+}
+
+.hold {
+  height: 125px;
+  width: 125px;
+  border: solid 3px #ccc;
+}
+
+.hovered {
+  /* background-color: #333; */
+  border-color: #333;
+  border-style: dashed;
+  opacity: 0.7;
+}
+
+@media (max-width: 775px) {
+  body {
+    flex-direction: column;
+  }
+}
