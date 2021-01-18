@@ -5,6 +5,12 @@
 }
 
 body {
+  background-color: dodgerblue;
+  background-image: linear-gradient(
+    315deg,
+    rgb(148, 0, 211, 0.25),
+    rgb(148, 0, 211, 0.8)
+  );
   font-family: 'Roboto', sans-serif;
   margin: 0;
   height: 100vh;
@@ -13,9 +19,27 @@ body {
 
 h4 {
   font-size: 20px;
+  color: #fff;
   margin: 5px;
   text-transform: uppercase;
 }
+
+button {
+  background-color: dodgerblue;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 16px;
+  /* outline: none; */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:focus {
+  outline: none;
+}
+
 .counter {
   position: fixed;
   top: 50%;
@@ -42,21 +66,23 @@ h4 {
   position: fixed;
   top: 50%;
   left: 50%;
+  color: #fff;
+  font-size: 30px;
   transform: translate(-50%, -50%) scale(0);
   text-align: center;
 }
 
 .final.show {
   transform: translate(-50%, -50%) scale(1);
-  animation: show 0.2s ease-out;
+  animation: show 0.4s ease-out;
 }
 
 @keyframes show {
   0% {
     transform: translate(-50%, -50%) scale(0);
   }
-  30% {
-    transform: translate(-50%, -50%) scale(1.4);
+  50% {
+    transform: translate(-50%, -50%) scale(2);
   }
   100% {
     transform: translate(-50%, -50%) scale(1);
@@ -64,7 +90,7 @@ h4 {
 }
 
 .nums {
-  color: #3498db;
+  color: rgb(180, 220, 255);
   font-size: 50px;
   position: relative;
   overflow: hidden;
